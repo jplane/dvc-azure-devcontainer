@@ -15,9 +15,9 @@
 	"containerEnv": {
 		"AZURE_STORAGE_CONNECTION_STRING": "" // add your Azure storage conn string here
 	},
-	"workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/workspace,type=bind",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
 	"workspaceFolder": "/workspace",
     "mounts": [
-        "source=${localWorkspaceFolder}/workspace/code,target=/home/jovyan/code,type=bind,consistency=cached"
+        "source=${localWorkspaceFolder}/code,target=/home/jovyan/code,type=bind,consistency=cached"
     ]
 }
